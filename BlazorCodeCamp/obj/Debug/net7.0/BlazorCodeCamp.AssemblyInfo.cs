@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorCodeCamp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40ccd84b8cdc7b97eda372befc1253852807cfe8")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorCodeCamp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorCodeCamp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
