@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "5hG85CSEGToCyt8M+MkG6X7aOK56hZhFQZV5o758slUuEEVOEMoDiI72mNLsUM+YQBIyqQUd/j7JW+Lz84fe5g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jygib\\source\\repos\\BlazorCodeCamp\\BlazorCodeCamp\\BlazorCodeCamp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jygib\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.12\\microsoft.windowsdesktop.app.ref.7.0.12.nupkg.sha512",
+    "C:\\Users\\jygib\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.12\\microsoft.netcore.app.ref.7.0.12.nupkg.sha512",
+    "C:\\Users\\jygib\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.12\\microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512",
+    "C:\\Users\\jygib\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.12\\microsoft.netcore.app.host.win-x64.7.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
