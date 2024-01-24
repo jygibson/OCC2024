@@ -1,12 +1,16 @@
+using BlazorCodeCamp.Components;
 using BlazorCodeCamp.Data;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.WebHost.UseWebRoot("wwwroot");
+builder.WebHost.UseStaticWebAssets();
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddServerSideBlazor();
+builder.Services.AddServerSideBlazor(options =>
+{
+    options.RootComponents.RegisterCustomElement<SimpleComponent>("simple-component");
+});
 builder.Services.AddSingleton<WeatherForecastService>();
 
 var app = builder.Build();
