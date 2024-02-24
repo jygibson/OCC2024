@@ -1,0 +1,33 @@
+<h4>Parameter Mad Libs!</h4>
+
+<kendo-label text="Proper Noun">
+    <kendo-textbox [(ngModel)]="properNoun" placeholder="Person/Place/Thing but specific, like Orlando Code Camp or Taco Bell"></kendo-textbox>
+</kendo-label>
+
+<kendo-label text="Plural Noun">
+    <kendo-textbox [(ngModel)]="noun" placeholder="Person/Place/Thing but less proper (unicorns, cats, board games)"></kendo-textbox>
+</kendo-label>
+
+<kendo-label text="Adjective (e.g. pretty, silly, gross)">
+    <kendo-textbox [(ngModel)]="adjective" placeholder="Descriptive"></kendo-textbox>
+</kendo-label>
+
+<kendo-label text="Verb">
+    <kendo-textbox [(ngModel)]="verb" placeholder="Past Tense Action (e.g. Walked, Ran)"></kendo-textbox>
+</kendo-label>
+
+<kendo-formfield>
+    <kendo-label text="Number">
+        <kendo-textbox [(ngModel)]="number" placeholder="A number"></kendo-textbox>
+    </kendo-label>
+</kendo-formfield>
+
+
+<button kendoButton (click)="submit()">See the sentence!</button>
+<button kendoButton (click)="reset()">Reset</button>
+
+<div *ngIf="madLibs">
+    <mad-libs [attr.mad-libs]="true" [attr.proper-noun]="properNoun" [attr.noun]="noun" [attr.adjective]="adjective" [attr.verb]="verb"
+       [attr.number]="number"></mad-libs>
+</div>
+

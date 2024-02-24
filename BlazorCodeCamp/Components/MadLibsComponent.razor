@@ -1,0 +1,29 @@
+﻿@using BlazorCodeCamp.Data.Models
+
+@if (MadLibs == "true")
+{
+    <h3>I can't believe I got people to play madlibs with me!! </h3>
+    <h2>Today, I @Verb to @ProperNoun . While there, I picked up @Number @Adjective @Noun. </h2>
+}
+
+
+@code {
+    [Parameter]
+    public string MadLibs { get; set; }
+
+    [Parameter]
+    public string ProperNoun { get; set; }
+
+    [Parameter]
+    public string Noun { get; set; }
+
+    [Parameter]
+    public string Adjective { get; set; }
+
+    [Parameter]
+    public string Verb { get; set; }
+
+    [Parameter]
+    public int Number { get; set; }
+
+}
