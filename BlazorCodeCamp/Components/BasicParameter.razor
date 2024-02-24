@@ -1,0 +1,17 @@
+﻿<h3>Basic Parameters</h3>
+
+@if (!String.IsNullOrEmpty(VolunteerName))
+{
+    <div>@VolunteerName gets an air high five!</div>
+
+}
+
+
+
+
+
+
+@code {
+    [Parameter]
+    public string VolunteerName { get; set; }
+}

@@ -10,8 +10,12 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor(options =>
 {
     options.RootComponents.RegisterCustomElement<SimpleComponent>("simple-component");
+    options.RootComponents.RegisterCustomElement<BasicParameter>("basic-parameters");
+    options.RootComponents.RegisterCustomElement<MadLibsComponent>("mad-libs");
+    options.RootComponents.RegisterCustomElement<JavacriptParameters>("javascript-parameters");
+
+
 });
-builder.Services.AddSingleton<WeatherForecastService>();
 
 var app = builder.Build();
 

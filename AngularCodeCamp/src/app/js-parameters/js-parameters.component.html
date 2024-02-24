@@ -1,0 +1,27 @@
+<h4>Model Based Parameter Mad Libs!</h4>
+
+<kendo-label text="Singular Proper Noun">
+    <kendo-textbox [(ngModel)]="theModel.properNoun"
+        placeholder="Person/Place/Thing but specific, like Orlando Code Camp or Taco Bell"></kendo-textbox>
+</kendo-label>
+
+<kendo-label text="Singular Noun">
+    <kendo-textbox [(ngModel)]="theModel.noun"
+        placeholder="Person/Place/Thing but less proper (unicorn)"></kendo-textbox>
+</kendo-label>
+
+<kendo-label text="Adjective">
+    <kendo-textbox [(ngModel)]="theModel.adjective" placeholder="Descriptive (e.g. funny, calm, friendly)"></kendo-textbox>
+</kendo-label>
+
+<kendo-label text="Past Tense Verb">
+    <kendo-textbox [(ngModel)]="theModel.verb" placeholder="Action (e.g. traveled, crawled, drove)"></kendo-textbox>
+</kendo-label>
+
+<kendo-label text="Present Tense Verb">
+    <kendo-textbox [(ngModel)]="theModel.verb2" placeholder="Action (e.g. walking, dancing, coding)"></kendo-textbox>
+</kendo-label>
+
+<button kendoButton (click)="submit()">See the sentence!</button>
+
+<javascript-parameters></javascript-parameters>

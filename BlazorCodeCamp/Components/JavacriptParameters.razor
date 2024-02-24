@@ -1,0 +1,13 @@
+﻿@using BlazorCodeCamp.Data.Models;
+
+@if (TheModel != null)
+{
+    <p>Once upon a time, a @TheModel.Adjective @TheModel.Noun @TheModel.Verb to the @TheModel.ProperNoun . While there, the @TheModel.Noun picked up some @TheModel.Verb2 skills. </p>
+}
+
+@code {
+
+    [Parameter]
+    public MadLibModel TheModel { get; set; }
+
+}

@@ -1,32 +1,7 @@
-﻿<h3>insert bad joke here</h3>
+﻿<h3>Orlando Code Camp 2024 Fun Time Component!</h3>
+<h4>I'm just a simple component!</h4>
 
-@if (!String.IsNullOrEmpty(VolunteerName))
-{
-   <div>@VolunteerName gets a participation trophy!</div>
-}
-
-@if (MadLibs == "true")
-{
-    <p>Today, I @Verb to @ProperNoun . While there, I picked up a @Adjective @Noun. </p>
-}
 
 @code {
-    [Parameter]
-    public string VolunteerName { get; set; }
-
-    [Parameter]
-    public string MadLibs { get; set; }
-
-    [Parameter]
-    public string ProperNoun { get; set; }
-
-    [Parameter]
-    public string Noun { get; set; }
-
-    [Parameter]
-    public string Adjective { get; set; }
-
-    [Parameter]
-    public string Verb { get; set; }
 
 }
